@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис - AutoSalon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">🚗 AutoSalon</a>
+            <nav class="nav" id="nav">
+                <a href="services.html" class="active">Обслужить</a>
+                <a href="about.html">О нас</a>
+            </nav>
+            <button class="btn btn--black" id="contactBtn">Связаться с нами</button>
+            <button class="burger" id="burger">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title" style="margin-top: 40px;">Сервис обслуживания в Санкт-Петербурге</h1>
+        
+        <section class="hero" style="grid-template-columns: 1fr; margin-top: 0;">
+            <div style="position: relative; color: white;">
+                <img src="https://st4.depositphotos.com/10614052/31213/i/450/depositphotos_312132596-stock-photo-male-mechanic-repairing-car-in.jpg" alt="Сервис" style="height: 300px;">
+                <h2 style="position: absolute; top: 50%; left: 40px; transform: translateY(-50%); font-size: 32px; background: rgba(0,0,0,0.5); padding: 10px;">Все виды работ по обслуживанию авто</h2>
+            </div>
+        </section>
+
+        <section class="services-grid">
+    <div class="service-card">
+        <div class="service-title">Техническое<br>обслуживание</div>
+        <div class="service-icon">🛢️</div>
+    </div>
+    
+    <div class="service-card service-card--wide">
+        <div class="service-title">Слесарный ремонт</div>
+        <div class="service-icon">🛠️</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-title">Детейлинг</div>
+        <div class="service-icon">🧽</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-title">Кузовной ремонт</div>
+        <div class="service-icon">🔫</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-title">Шиномонтаж</div>
+        <div class="service-icon">🛞</div>
+    </div>
+    
+    <div class="service-card service-card--wide">
+        <div class="service-title">Диагностика</div>
+        <div class="service-icon">💻</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-title">Обслуживание<br>электромобилей<br>и гибридов</div>
+        <div class="service-icon">🔌</div>
+    </div>
+</section>
+
+        <section class="booking-section">
+            <form class="booking-form" id="bookingForm">
+                <h2>ОНЛАЙН-ЗАПИСЬ НА СЕРВИС</h2>
+                <input type="text" id="plate" placeholder="ГОС НОМЕР">
+                <input type="text" id="carModel" placeholder="МАРКА И МОДЕЛЬ">
+                <input type="text" id="service" placeholder="УСЛУГА">
+                <input type="tel" id="phone" placeholder="ТЕЛЕФОН">
+                <button type="submit" class="btn btn--black">Отправить заявку</button>
+            </form>
+            <div>
+                <img src="https://di-uploads-pod1.dealerinspire.com/lancastertoyota/uploads/2020/05/Oil_Man2.jpg?w=600" alt="Механик">
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="contactModal">
+        <div class="modal-content"><span class="close-modal">&times;</span><h3>Связаться с нами</h3><p>+7 (812) 000-00-00</p></div>
+    </div>
+<footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer-contacts">
+                <p>Адрес автосалона: Энгельса 23</p>
+                <p>Телефон: +7 (812) 000-00-00</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="#" title="VK">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_%282021-present%29.svg" alt="VK">
+                </a>
+                <a href="#" title="Telegram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                </a>
+                <a href="#" title="YouTube">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube">
+                </a>
+                <a href="#" title="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                </a>
+            </div>
+            
+            <div class="footer-logo">
+                🚗 AutoSalon
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
